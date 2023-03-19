@@ -1,0 +1,16 @@
+proxies:
+  - name: users
+    base_url: http://localhost:8001
+    routes:
+      - path: /users
+        target: /users
+      - path: /users/{id}
+        target: /users/{id}
+  - name: posts
+    base_url: http://localhost:8002
+    routes:
+      - path: /posts
+        target: /posts
+      - path: /posts/{id}
+        target: /posts/{id}
+
